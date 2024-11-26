@@ -47,10 +47,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: '.'
+          path: './client/src'
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-          with: 
-            publish_dir: ./client/src
         id: deployment
         uses: actions/deploy-pages@v4
