@@ -3,7 +3,7 @@
 body {
     font-family: Poppins, sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url(/Cinemood/client/src/images/bg-home-2.png);
+    background-image: url(Cinemood/client/src/images/bg-home-2.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
