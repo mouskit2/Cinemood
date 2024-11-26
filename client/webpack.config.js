@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
     entry: './client/src/index.js',
     output: {
         filename: 'bundle.js',
@@ -18,6 +17,6 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
-    }
-};
-
+    },
+    mode: 'development' // Ajoutez cette ligne pour définir le mode
+    };
