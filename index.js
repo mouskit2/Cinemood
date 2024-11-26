@@ -9,11 +9,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Définir le répertoire public pour servir les fichiers statiques
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/')));
 
 // Route pour servir le fichier index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, '/', 'index.html'));
 });
 
 // Route pour envoyer les variables d'environnement au client
