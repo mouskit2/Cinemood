@@ -18,5 +18,5 @@ module.exports = {
             },
         ],
     },
-    mode: 'development' // Ajoutez cette ligne pour définir le mode
-    };
+    mode: 'development'
+};
