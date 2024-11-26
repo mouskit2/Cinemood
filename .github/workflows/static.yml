@@ -31,6 +31,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Use Node.js 
+        uses: actions/setup-node@v2
+        with:
+            node-version: '14'
+      - name: Install dependencies 
+        run: npm install 
+      - name: Build 
+        run: npm run build 
         env: 
           MOVIE_DB_API_KEY: ${{ secrets.MOVIE_DB_API_KEY }}
       - name: Setup Pages
