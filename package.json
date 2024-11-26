@@ -1,8 +1,8 @@
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "build": "webpack"
+    "start": "nodemon server/index.js",
+    "build": "webpack --config client/webpack.config.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",

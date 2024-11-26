@@ -1,4 +1,3 @@
-// index.js
 const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
@@ -8,12 +7,10 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Définir le répertoire public pour servir les fichiers statiques
-app.use(express.static(path.join(__dirname, '/')));
+app.use(express.static(path.join(__dirname, '../client/src')));
 
-// Route pour servir le fichier index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/', 'index.html'));
+    res.sendFile(path.join(__dirname, '../client/src', 'index.html'));
 });
 
 // Route pour envoyer les variables d'environnement au client
@@ -26,3 +23,4 @@ app.get('/env', (req, res) => {
 app.listen(port, () => {
     console.log(`Serveur démarré sur http://localhost:${port}`);
 });
+
