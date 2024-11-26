@@ -18,7 +18,6 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
-    },
-    mode: 'development'
+    }
 };
 
