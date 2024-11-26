@@ -34,11 +34,17 @@ https://developer.themoviedb.org/reference/intro/getting-started
    MOVIE_DB_API_KEY=yourmoviedbapikey
    ```
 
+**Lancer Git Bash :**
+
 ```
-node index.js 
+
+
+node index.js
 ```
 dans votre navigateur web
 
 ```
 http://localhost:3000/
 ```
+
+
