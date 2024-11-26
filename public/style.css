@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(/images/bg-home-2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 5px;
+    background-color: rgba(218, 187, 203, 0.9);
+    filter: drop-shadow(30px 30px 20px black);
+    width: 50rem;
+    border-radius: 20px 0px 20px 0px;
+}
+
+h1 span {
+    color: rgb(173, 73, 73);
+}
+
+main {
+    margin: 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50rem;
+}
+
+#randomname {
+    padding: 30px 30px 10px 30px;
+}
+
+.button-mood {
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 40px;
+    margin: 10px;
+    text-decoration: none;
+    filter: drop-shadow(5px 5px 4px rgb(173, 73, 73));
+}
+
+.button-mood:hover {
+   font-size: 50px;
+}

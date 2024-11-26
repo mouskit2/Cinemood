@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fiche_style.css">
+    <link rel="stylesheet" href="menu-style.css">
+    <link rel="shortcut icon" href="#">
+    <title>Cinemood</title>
+</head>
+
+<body>
+    <div id="background-image"></div>
+    <div id="wrapper">
+
+        <!-- Partie gauche : image & bouton random film -->
+        <div id="image-wrapper"> 
+            <div class="left-wrapper"><a id="youtube-poster" class="poster" href="" target="_blank"><img id="image" class="poster" src="images/bg-home-2-old.png" alt=""></a></div>
+            <div class="left-wrapper" id="button">🔀 Propose-moi un autre film</div>
+        </div>
+
+        <!-- Partie droite : fiche description film -->
+        <section id="content-wrapper">
+            <main id="main">
+                <p id="title"></p>
+                <p id="genre"></p>
+                    <div class="film-details">
+                        <p id="average-note"></p>
+                        <p id="duration"></p>
+                        <p id="release-date"></p>
+                    </div>
+                <div id="buttons-movie">
+                    <a href="" target=_blank id="button-link">
+                        <p>Où voir ce film ?</p>
+                    </a>
+                    <a href="" target=_blank id="youtube-button">
+                        <p>Voir le trailer</p>
+                    </a>
+                </div>   
+                <h3>Synopsis</h3>
+                <p id="synopsis">loading...</p>
+                <div id="credits">
+                    <p id="director"></p>
+                    <p id="main-cast"></p>
+                </div>
+            </main>
+        </section>
+    </div>
+
+    <!-- Bouton "Changer d'humeur" -->
+    <menu>
+        <li>
+            <a href="#" class="change-emotion">Changer d'humeur ?</a>
+            <ul class="dropdown">
+                <li><a href="fiche.html?happy" class="mood">😁</a></li>
+                <li><a href="fiche.html?sad" class="mood">😢</a></li>
+                <li><a href="fiche.html?goofy" class="mood">🤪</a></li>
+                <li><a href="fiche.html?in-love" class="mood">🥰</a></li>
+                <li><a href="fiche.html?nerdy" class="mood">🤓</a></li>
+                <li><a href="fiche.html?angry" class="mood">😡</a></li>
+                <li><a href="fiche.html?surprise-me" class="mood">🎲</a></li>
+        </li>
+        </ul>
+    </menu>
+    <script src="script.js"></script>
+</body>
+
+</html>

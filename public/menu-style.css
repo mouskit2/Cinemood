@@ -1,0 +1,77 @@
+/* --- MENU DEROULANT --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+menu li {
+    position: relative;
+    z-index: 2;
+    list-style-type: none;
+}
+
+.change-emotion {
+    display: flex;
+    border-radius: 40px;
+    width: 50vh;
+    color: black;
+    padding: 1rem ;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    justify-content: center;
+    background-color: white;
+    opacity: 0.5;
+    border: 1px solid white;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    filter: drop-shadow(5px 5px 4px black);
+}
+
+.change-emotion:hover {
+    background-color: white;
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+
+}
+
+ul li a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    overflow: hidden;
+    padding: 10px;
+    filter: drop-shadow(5px 5px 4px black);
+}
+
+li ul.dropdown {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+li:hover ul.dropdown {
+    display: block;
+}
+
+.mood:hover {
+    display: flex;
+    justify-content: center;
+    transform: translateY(2px);
+    font-size: 40px;
+}
