@@ -13,10 +13,32 @@ via des appels API à la base de films de TMDB.
 - IDE : VSCode
 - OS : Windows / Mac /Linux
 ## Utilisation
-S'exécute via ...
-## Sources
-Ajoute une note sur les sources
-## Contributions
-Ajoute une note sur les contributions
-## Licences
-Ajoute une note sur les licences utilisées
+```
+git clone https://github.com/mouskit2/Cinemood.git
+```
+```
+cd Cinemood
+```
+```
+npm install dotenv
+npm install express
+```
+Inscrivez-vous pour obtenir un compte
+https://www.themoviedb.org/signup
+
+Connectez-vous à votre compte pour avoir votre api key
+https://developer.themoviedb.org/reference/intro/getting-started
+
+**Créer un fichier `.env` :**
+   ```env
+   MOVIE_DB_API_KEY=yourmoviedbapikey
+   ```
+
+```
+node index.js 
+```
+dans votre navigateur web
+
+```
+http://localhost:3000/
+```
