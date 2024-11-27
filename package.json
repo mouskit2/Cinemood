@@ -1,7 +1,11 @@
+
 {
+  "name": "cinemood",
+  "version": "1.0.0",
+  "description": "Description de votre projet",
+  "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node server/index.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
