@@ -26,15 +26,3 @@ jobs:
       run: |
         npm install
         npx webpack
-      env: 
-          MOVIE_DB_API_KEY: ${{ secrets.MOVIE_DB_API_KEY }}
-    - name: Setup Pages
-      uses: actions/configure-pages@v5
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-          # Upload entire repository
-          path: './client/src'
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
