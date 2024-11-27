@@ -1,6 +1,7 @@
 // script.js
 // INITIALISATION VARIABLES INTERACTION AVEC LE DOM
 
+
 let button = document.getElementById('button');
 let image = document.getElementById('image');
 let filmId = document.getElementById('filmid');
