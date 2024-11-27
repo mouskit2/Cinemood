@@ -1,5 +1,7 @@
 // script.js
 // INITIALISATION VARIABLES INTERACTION AVEC LE DOM
+const dotenv = require('dotenv');
+dotenv.config();
 
 let button = document.getElementById('button');
 let image = document.getElementById('image');
@@ -52,7 +54,7 @@ async function loadEnv() {
   return env; }
 
 const getFilmData = async (id_film) => {
-  const movieDbApiKey = await loadEnv();
+  const movieDbApiKey = process.env.MOVIE_DB_API_KEY;
 
   let requestString = `https://api.themoviedb.org/3/movie/${id_film}?language=fr-FR`;
 
@@ -161,7 +163,7 @@ const changeFilm = async () => {
 
 const FilmDataListByMood = async (pagenbr) => {
 
-  const movieDbApiKey = await loadEnv();
+  const movieDbApiKey = process.env.MOVIE_DB_API_KEY;
 
   let mood = window.location.search.replace("?", "");
   let with_genres = ''
