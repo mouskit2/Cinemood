@@ -1,4 +1,5 @@
 # Cinemood
+Deployed on vercel : https://cinemood-krenkj162-mouskits-projects.vercel.app/
 ## À propos
 Construction d’une application web permettant de visualiser des
 recommandations de films selon le mood de l’utilisateur
